@@ -5,7 +5,7 @@ public class SaveManager : MonoBehaviour
     // Save data method
     public void SaveData()
     {
-        // Implement your data saving logic here
+        // implement your data saving logic here
         Debug.Log("Saving data...");
         PlayerPrefs.SetString("SavedData", "Your saved data here");
         PlayerPrefs.Save();
@@ -14,7 +14,7 @@ public class SaveManager : MonoBehaviour
     // Load data method
     public string LoadData()
     {
-        // Implement your data loading logic here
+        // implement your data loading logic here
         Debug.Log("Loading data...");
         return PlayerPrefs.GetString("SavedData", "");
     }

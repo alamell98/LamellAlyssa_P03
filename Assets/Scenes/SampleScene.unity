@@ -1298,6 +1298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1223963243}
   - component: {fileID: 1223963242}
+  - component: {fileID: 1223963244}
   m_Layer: 0
   m_Name: LevelController
   m_TagString: Untagged
@@ -1317,9 +1318,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f890dfaa16cb5c04ab9d82d2222866dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _resetDataButton: {fileID: 0}
-  _quitButton: {fileID: 0}
-  _saveManager: {fileID: 0}
+  _resetDataButton: {fileID: 278583586}
+  _quitButton: {fileID: 1387371822}
+  _saveButton: {fileID: 418636075}
+  _loadButton: {fileID: 1394666259}
+  _newGameButton: {fileID: 278583586}
+  _saveManager: {fileID: 777269618}
+  resetDataOnNewGame: 0
 --- !u!4 &1223963243
 Transform:
   m_ObjectHideFlags: 0
@@ -1335,6 +1340,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1223963244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223963241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1c1e73e7dab7e42a00637daebe9726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1249218741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,7 +1582,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1387371823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1223963242}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1387371823
 MonoBehaviour:
   m_ObjectHideFlags: 0
