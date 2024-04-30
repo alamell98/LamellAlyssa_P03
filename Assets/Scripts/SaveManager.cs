@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
-    // Save data method
+    // save data method
     public void SaveData()
     {
         // implement your data saving logic here
@@ -11,7 +11,7 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    // Load data method
+    // load data method
     public string LoadData()
     {
         // implement your data loading logic here
